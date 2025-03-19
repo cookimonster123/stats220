@@ -10,7 +10,7 @@ A little about me:
 A meme that captures how I currently feel about my university studies is\
 ![image](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTJpazYwcGc5end2Y3U5cWJoNzJ4YjByZXp2YzlyeTBhbWRjamFmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10tytwcRXOipWw/giphy.gif)
 
-## Current Top 3 songs
+## Current Top 3 Songs
 1. What is Love - TWICE
 2. What is Love - TWICE
 3. What is Love - TWICE
