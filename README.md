@@ -7,12 +7,13 @@ A little about me:
 2. I am taking STATS 220 because it aligns with my interests
 - I am interested in learning about *R*
 
-A meme that captures how I currently feel about my university studies is ![image](https://github.com/user-attachments/assets/69116b44-ffa9-4b3d-89d9-a0adb54c803b)
+A meme that captures how I currently feel about my university studies is\
+![image](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTJpazYwcGc5end2Y3U5cWJoNzJ4YjByZXp2YzlyeTBhbWRjamFmbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10tytwcRXOipWw/giphy.gif)
 
 
-## Meme selection
+## Another gif
 
-![inspo_meme](https://github.com/user-attachments/assets/1a0d9a67-e2cd-4520-b830-9cb1454fbb76)
+![gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjFlbzhrZzltcGY4ODg2amt0aGZ2OWZsYTV0eGhlYWY0emhmNjRwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ji6zzUZwNIuLS/giphy.gif)
 
 
 
