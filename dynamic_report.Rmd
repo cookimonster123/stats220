@@ -1,0 +1,75 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+body {
+  font-size = 1.5em;
+  background-color: #f5f5f5;
+  font-family: monospace;
+}
+```
+
+## This dynamic report is tracking the relationship between different data within a chess game
+
+```{r}
+library(tidyverse)
+
+logged_data <- read.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vT4VHDLW-dUDnOtnBCe_9nWT8LBdIMchSbIAFMKdjESx6ZYoqS0lO6HoldSoaidIKrZyBlE1jukrVfZ/pub?gid=1305636824&single=true&output=csv')
+
+latest_data <- logged_data %>%
+  rename(num_moves = 2,
+         result = 3,
+         duration_mins = 4,
+         joy = 5)
+
+# Bar chart showing the results of games
+latest_data %>%
+  ggplot() +
+    geom_bar(aes(x = result), fill = "6a0dad") + 
+  labs(title = "Number of Games Won, Lost and Draw",
+       x = "Result",
+       y = "Number of Games")
+
+# Bar chart showing the duration of games
+latest_data %>%
+  ggplot() + 
+    geom_bar(aes(x = duration_mins,
+             fill = result)) + 
+  labs(title = "Longer games, more likely to win?",
+      subtitle = "Comparing duration and the result of games",
+      x = "Duration (mins)",
+      y = "Number of games")
+
+```
+
+```{r}
+# Minimum number of moves
+min_moves <- min(latest_data$num_moves)
+
+# Maximum number of moves
+max_moves <- max(latest_data$num_moves)
+
+# Number of games won
+num_win <- table(latest_data$result)["Win"]
+
+paste("The minimum number of moves of all games is", 
+      min_moves,
+      collapse = " ")
+
+paste("The maximum number of moves of all games is", 
+      max_moves,
+      collapse = " ")
+
+paste("The number of games won is", 
+      num_win,
+      collapse = " ")
+```
+
+![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
