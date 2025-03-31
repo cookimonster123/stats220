@@ -72,4 +72,4 @@ paste("The number of games won is",
       collapse = " ")
 ```
 
-![](https://tenor.com/en-GB/view/limusa-cat-playing-chess-game-kitty-gif-16752722)
+![](https://media1.tenor.com/m/4QCKGlw6t2MAAAAd/lyxocx-lux.gif)
