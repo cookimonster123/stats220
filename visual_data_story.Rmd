@@ -1,0 +1,77 @@
+---
+title: A Data-Driven Look at Chess Game Outcomes
+output: html_document
+---
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+
+```{js}
+$(function() {
+  $(".level2").css('visibility', 'hidden');
+  $(".level2").first().css('visibility', 'visible');
+  $(".container-fluid").height($(".container-fluid").height() + 300);
+  $(window).on('scroll', function() {
+    $('h2').each(function() {
+      var h2Top = $(this).offset().top - $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (h2Top >= 0 && h2Top <= windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'visible');
+      } else if (h2Top > windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'hidden');
+      }
+    });
+  });
+})
+```
+
+
+```{css}
+.figcaption {display: none}
+body {
+  font-size = 1.5em;
+  background-color: #FFFFF0;
+  font-family: Helvetica;
+}
+
+h2 {
+  color: #31a354;
+}
+```
+
+## What's going on with this data?
+This analysis explores patterns in chess gameplays, specifically using attributes such as move counts, results, and  duration, etc. Through visualizations, we examine the relationships between different aspects of chess gameplay.\
+![cat playing chess](catchess.png)
+
+## Game Outcomes and Number of Moves
+The first plot examines whether the number of moves in a chess game is associated with the game’s outcome. Games are categorized into five move-count ranges: under 10, 10–19, 20–29, 30–39, and over 40 moves. The distribution shows that most games fall within the 20–29 move range, which also appears to correspond with a higher frequency of wins. Although this plot presents raw counts rather than proportions, it still provides insight into the overall distribution of outcomes across different game lengths. \
+![Bar chart showing game results by move range](plot1.png)
+
+## Duration and Move Count
+In the second plot, we explore whether the time duration of games affects the number of moves. We categorized games into four groups based on duration, less than 1 minute, 1-10, 10-20 and longer than 20 minutes. Then, we overlaid the number of moves with jitters and boxplots. 
+From the plot we can see than we indeed have a higher move count as the duration increases.
+![Boxplot showing number of moves by game duration](plot2.png)
+
+## Time of Day and Game Frequency
+Finally, we used the timestamp to investigate when games are played the most frequently. We categorised the games into Morning (5am to 12pm), Afternoon(12pm - 6pm), Night(6pm-5am).
+
+The results show that afternoon and night dominate game activity, and morning has the fewest games.\
+![Bar chart showing games by time of day](plot3.png)
+![A black and white cat dancing](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
+
+## Wait, another dancing cat?
+
+![A tabby cat dancing](https://media.tenor.com/NcCe__ZKe9oAAAAM/dancing-cat-cat-meme.gif)
+
+
+## A dance team of kittens!
+
+![Five kittens head banging](https://c.tenor.com/pY-3HX1r4wUAAAAC/tenor.gif)
+
+
+
+
