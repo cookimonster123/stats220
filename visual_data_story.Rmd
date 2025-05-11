@@ -1,6 +1,6 @@
 ---
 title: A Data-Driven Look at Chess Game Outcomes
-output: html_document
+output: html_fragment
 ---
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
